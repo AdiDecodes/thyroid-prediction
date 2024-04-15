@@ -21,7 +21,7 @@ const App = () => {
 	return (
 		<>
 			<Router>
-				{/* <NavBar className='w-screen h-auto' /> */}
+				<NavBar className='w-screen h-auto' />
 				<Routes>
 					<Route
 						exact

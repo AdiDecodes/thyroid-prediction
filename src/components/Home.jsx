@@ -6,7 +6,6 @@ import doctor from '../Assets/doctor.png';
 import pills from '../Assets/pills.png';
 import report from '../Assets/report.png';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './NavBar.jsx';
 
 const Home = () => {
 	const navigate = useNavigate();
@@ -36,7 +35,6 @@ const Home = () => {
 	return (
 		<>
 			<div className={styles.mainWrapper}>
-				<Navbar />
 				<div className={styles.main}>
 					<img
 						src={herobg}

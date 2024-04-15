@@ -19,6 +19,7 @@ import { useEffect } from 'react';
 // import SignUp from "../pages/SignUp";
 // import Login from "../pages/Login";
 import PredictionForm from './Prediction';
+import logo from '../Assets/thycare.png';
 
 const NavBar = () => {
 	const [isMenu, setIsMenu] = useState(false);
@@ -28,7 +29,7 @@ const NavBar = () => {
 	const [isLoggedIn, setIsLoggedIn] =
 		useState(false);
 	//   const dispatch = useDispatch();
-	const headerClasses = `z-50 w-100 px-4 md:p-6 md:px-16 bg-lightCard shadow-md ${
+	const headerClasses = `z-50 w-100 px-4 md:p-6 md:px-16 bg-green-100 shadow-md ${
 		visible ? '' : 'hidden'
 	}`;
 
@@ -71,12 +72,11 @@ const NavBar = () => {
 				<div className='flex items-center gap-2'>
 					{/* <img src={Logo} width="75px" alt="logo" /> */}
 					<Link to='/'>
-						<p className='text-lightModeTextColor text-2xl '>
-							<span className='font-semibold'>
-								Thyroid
-							</span>
-							Prediction
-						</p>
+						<img
+							src={logo}
+							alt=''
+							className='w-[30%] h-auto'
+						/>
 					</Link>
 				</div>
 				<div className='flex items-center gap-8'>
