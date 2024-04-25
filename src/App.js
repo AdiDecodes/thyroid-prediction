@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Blogs from './components/Blogs';
 import NavBar from './components/NavBar';
 import Thyroid from './components/Prediction';
+import Footer from './components/Footer';
 import AwareNess from './components/AwareNess';
 
 // import Resources from "./components/Resources"; // Import Resources component
@@ -51,6 +52,7 @@ const App = () => {
 						element={<AwareNess />}
 					/>
 				</Routes>
+				<Footer />
 			</Router>
 		</>
 	);
